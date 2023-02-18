@@ -16,7 +16,7 @@ IFS=$'\n\t'
 # https://docs.docker.com/engine/release-notes/23.0/#new. Until we've done the
 # work tracked by https://github.com/certbot/certbot/issues/9587, let's
 # continue using the legacy builder.
-export DOCKER_BUILDKIT=0
+export DOCKER_BUILDKIT=1
 WORK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 REPO_ROOT="$(dirname "$(dirname "${WORK_DIR}")")"
 source "$WORK_DIR/lib/common"
