@@ -8,7 +8,7 @@ pr: none
 variables:
   # We don't publish our Docker images in this pipeline, but when building them
   # for testing, let's use the nightly tag.
-  dockerTag: nightly
+  dockerTag: smoketest
   snapBuildTimeout: 5400
 
 stages:
